@@ -1,3 +1,7 @@
+body {
+  font-family: 'relaway';
+}
+
 
 /* PC */
 @media screen and (min-width:1200px){
@@ -23,19 +27,18 @@
 }
 
 .header-box {
-  /* width: 1100px; */
+  width: 1100px;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
 .fa-bolt {
   font-size: 3em;
-  padding: 15px 0;
-  margin-left: 200px;
 }
 
 .button1 {
   float: right;
-  margin-right: 200px;
-  margin-top: 10px;
+  display: block;
   font-size: 12px;
   padding: 14px 12px;
   background-color: #74cfae;
@@ -47,16 +50,22 @@
   text-decoration: none;
 }
 
+.button1-inner:hover {
+  transition: 0.3s;
+  color: #333;
+}
+
 /* main divのスタイル */
 
 .main {
   width: 100%;
+  background-color: #f2f2f2;
 }
 
 .main-content {
-  /* width: 1100px; */
+  width: 1100px;
+  margin: 0 auto;
   padding: 250px 0;
-  background-color: #f2f2f2
 }
 
 .main-content-text {
@@ -76,21 +85,24 @@
 /* section1のスタイル */
 
 .section1 {
+  width: 100%;
   background-color: #74cfae;
 }
 
 .section1-box {
   display: flex;
+  width: 1100px;
+  margin: 0 auto;
   padding-top: 50px;
   justify-content: center
 }
 
 .section1-box-content {
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 
 .section1-text-box {
-  width: 600px;
+  width: 750px;
   color: #fff;
   margin-left: 
 }
@@ -119,6 +131,11 @@
   background-color: #f2f2f2;
 }
 
+.article-body {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .article-textbox1 {
   text-align: center
 }
@@ -132,24 +149,33 @@
   font-family: 'raleway'
 }
 
+
 .article-conteiner1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 80px;
 }
 
-.conteiner-figure1:nth-child(n+2) {
-  margin-left: 100px;
+.conteiner1-inner {
+  padding-bottom: 80px;
 }
 
-.article-conteiner2 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 90px;
+.conteiner1-inner:nth-child(n+2) {
+  padding-left: 100px;
 }
 
-.conteiner-figure2:nth-child(n+2) {
-  margin-left: 100px;
+
+.conteiner2-inner {
+  padding-bottom: 90px;
+}
+
+.conteiner3-inner {
+  padding-left: 100px;
+  padding-bottom: 90px;
+}
+
+.conteiner4-inner {
+  padding-bottom: 90px;
 }
 
 .conteiner-photo {
@@ -163,6 +189,7 @@
 
 .article-textbox2 {
   display: flex;
+  margin: 0 auto;
   justify-content: center;
 }
 
@@ -204,6 +231,11 @@
   color: #fff;
 }
 
+.article-btn-inner:hover {
+  transition: 0.3s;
+  color: #333;
+}
+
 
 
 /* section2のスタイル */
@@ -216,6 +248,8 @@
 }
 
 .section2-content {
+  width: 1100px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -246,9 +280,14 @@ font-family: 'raleway';
   background-color: #f2f2f2;
 }
 
+.nav-content {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .nav-box {
   display: inline-block;
-  padding: 40px 0;
+  padding: 25px 0;
   width: 185px;
   font-size: 50px;
   color: #74cfae;
@@ -289,9 +328,11 @@ font-family: 'raleway';
 
 
 
+
 /* SP */
 @media screen and (max-width:767px){
 }
+
 
 
 
