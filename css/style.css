@@ -1,6 +1,12 @@
-body {
-  font-family: 'relaway';
+.body {
+  font-family: 'Raleway';
 }
+
+.is-Lato {
+  font-family: 'Lato';
+}
+
+
 
 
 /* PC */
@@ -27,7 +33,7 @@ body {
 }
 
 .header-box {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -63,12 +69,13 @@ body {
 }
 
 .main-content {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 250px 0;
 }
 
 .main-content-text {
+  padding-top: 78px;
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
@@ -91,33 +98,36 @@ body {
 
 .section1-box {
   display: flex;
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   padding-top: 50px;
   justify-content: center
 }
 
 .section1-box-content {
-  /* margin-right: 100px; */
+  padding-left: 100px;
 }
 
 .section1-text-box {
-  width: 750px;
+  width: 650px;
+  text-align: center;
+  margin-left: 140px;
+  padding-top: 20px;
   color: #fff;
   margin-left: 
 }
 
 .section-text {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 24px;
-  font-family: 'raleway';
+  /* font-family: 'raleway'; */
   text-align: center
 }
 
 .section-text-inner {
-  width: 750px;
+  width: 650px;
   font-size: 20px;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 35px;
   line-height: 25px;
   box-sizing: border-box;
@@ -134,6 +144,7 @@ body {
 .article-body {
   width: 1100px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .article-textbox1 {
@@ -143,8 +154,6 @@ body {
 .article-content-text {
   color: #333;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
   font-size: 20px;
   font-family: 'raleway'
 }
@@ -153,36 +162,28 @@ body {
 .article-conteiner1 {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
   justify-content: center;
 }
 
 .conteiner1-inner {
-  padding-bottom: 80px;
+  margin-left: 100px;
 }
 
-.conteiner1-inner:nth-child(n+2) {
-  padding-left: 100px;
+.conteiner1-inner:nth-child(3n+1) {
+  margin-left: 0;
 }
 
-
-.conteiner2-inner {
-  padding-bottom: 90px;
+.conteiner1-inner:nth-child(-n+3) {
+  margin-bottom: 80px;
 }
 
-.conteiner3-inner {
-  padding-left: 100px;
-  padding-bottom: 90px;
-}
-
-.conteiner4-inner {
-  padding-bottom: 90px;
-}
-
-.conteiner-photo {
+.photobox {
   opacity: 0.7;
+  transition: 0.3s;
 }
 
-.conteiner-photo:hover {
+.photobox:hover {
   transition: 0.3s;
   opacity: 1;
 }
@@ -190,6 +191,7 @@ body {
 .article-textbox2 {
   display: flex;
   margin: 0 auto;
+  padding-top: 90px;
   justify-content: center;
 }
 
@@ -201,7 +203,7 @@ body {
 .article-conteinerbox.is-text {
   width: 650px;
   text-align: center;
-  padding-right: 90px;
+  margin-right: 90px;
   padding-bottom: 70px;
 }
 
@@ -250,13 +252,14 @@ body {
 .section2-content {
   width: 1100px;
   margin: 0 auto;
+  padding-top: 70px;
   text-align: center;
 }
 
 .section2-content-title {
 color: #fff;
-padding: 70px 0;
 font-size: 30px;
+margin-bottom: 70px;
 font-family: 'raleway';
 }
 
@@ -269,6 +272,10 @@ font-family: 'raleway';
 
 .section2-content-inner:nth-child(n+3){
   margin-left: 180px;
+}
+
+.section2-text {
+  font-size: 16px;
 }
 
 /* navのスタイル */
@@ -292,6 +299,7 @@ font-family: 'raleway';
   font-size: 50px;
   color: #74cfae;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .nav-box:hover {
@@ -303,24 +311,54 @@ font-family: 'raleway';
 
 .footer {
   width: 100%;
-  margin: 0;
+  text-align: center;
   background-color: #74cfae;
 }
 
 .footer-text {
-  display: inline-block;
-  float: right;
-  margin-right: 200px;
+  width: 1100px;
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 25px;
-  color: #fff;
 }
 
+.footer-inner {
+  text-align: right;
+  color: #fff;
+}
 
 /* レスポンシブ */
 
 /* TAB */
-@media screen and (min-width:768px) and (min-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px){
+  
+  .button1 {
+    display: block;
+  }
+  
+  .header-box {
+    width: 97%;
+    margin: 0 auto;
+  }
+  
+  .main-content {
+    width: 97%;
+  }
+
+  .section1-box {
+    display: block;
+  }
+
+  .section1-box-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .section1-text-box {
+    width: 97%;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 
