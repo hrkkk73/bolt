@@ -1,3 +1,8 @@
+
+img {
+  vertical-align: bottom;
+}
+
 .clearfix:after {
   display: block;
   content: "";
@@ -405,7 +410,6 @@
     display: block;
     font-size: 12px;
     padding: 14px 12px;
-    cursor: pointer;
     text-decoration: none;
   }
 
@@ -446,12 +450,12 @@
 
   .section1-text-box {
     width: 97%;
+    margin-top: 20px;
     text-align: center;
     margin: 0 auto;
   }
 
   .section-text {
-    margin-top: 20px;
     font-size: 24px;
     text-align: center
   }
@@ -505,13 +509,8 @@
   }
 
   .photobox {
+    display: inline-block;
     opacity: 0.7;
-    transition: 0.3s;
-  }
-
-  .photobox:hover {
-    transition: 0.3s;
-    opacity: 1;
   }
 
   .article-textbox2 {
@@ -550,7 +549,6 @@
     height: 15px;
     text-align: center;
     padding: 14px 20px;
-    cursor: pointer;
     text-decoration: none;
   }
 
@@ -585,8 +583,9 @@
   }
 
   .nav-content {
+    display: flex;
     padding: 160px 0;
-    text-align: -webkit-center;
+    text-align: center;
   }
 
   .nav-box {
@@ -639,7 +638,6 @@
     display: block;
     font-size: 12px;
     padding: 14px 12px;
-    cursor: pointer;
     text-decoration: none;
   }
 
@@ -784,7 +782,6 @@
     width: 97%;
     display: inline-block;
     text-align: center;
-    margin-right: 90px;
     line-height: 1.4;
     box-sizing: border-box;
     box-sizing: border-box;
@@ -802,7 +799,6 @@
     height: 15px;
     text-align: center;
     padding: 14px 20px;
-    cursor: pointer;
     text-decoration: none;
   }
 
@@ -843,21 +839,19 @@
   /* navのスタイル */
 
   .nav {
-    width: 97%;
     text-align: center;
   }
 
   .nav-content {
     padding: 50px 0;
-    text-align: -webkit-center;
   }
 
   .nav-box {
     display: inline-block;
     padding: 25px 0;
-    width: 185px;
+    width: 97%;
+    text-align: center;
     font-size: 50px;
-    cursor: pointer;
     transition: 0.3s;
   }
 
