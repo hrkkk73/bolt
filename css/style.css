@@ -184,7 +184,7 @@
     text-align: center;
     margin: 0 auto;
     margin-left: 140px;
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   .section-text {
@@ -289,8 +289,6 @@
     transition: 0.3s;
     color: #333;
   }
-
-
 
   /* section2のスタイル */
 
@@ -874,17 +872,4 @@
   .footer-inner {
     text-align: right;
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
