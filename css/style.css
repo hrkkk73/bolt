@@ -142,6 +142,7 @@ img {
 
   .button1-inner:hover {
     transition: 0.3s;
+    color: #333;
   }
 
 
