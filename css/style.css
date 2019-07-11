@@ -382,7 +382,6 @@ img {
 
   .inner {
     width: 97%;
-    margin: 0 auto;
   }
 
   .button1 {
@@ -437,7 +436,6 @@ img {
 
   .section1-box {
     display: block;
-    max-width: 1100px;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 25px;
@@ -451,9 +449,9 @@ img {
 
   .section1-text-box {
     width: 97%;
+    margin: 0 auto;
     margin-top: 20px;
     text-align: center;
-    margin: 0 auto;
   }
 
   .section-text {
@@ -479,7 +477,6 @@ img {
   }
 
   .article-content-text {
-    color: #333;
     text-align: center;
     font-size: 24px;
   }
@@ -585,8 +582,8 @@ img {
 
   .nav-content {
     display: flex;
+    justify-content: center;
     padding: 160px 0;
-    text-align: center;
   }
 
   .nav-box {
@@ -619,7 +616,6 @@ img {
 
   .inner {
     width: 97%;
-    margin: 0 auto;
   }
 
   .header {
