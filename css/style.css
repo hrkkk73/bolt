@@ -23,6 +23,7 @@ img {
 }
 
 .header {
+  position: fixed;
   width: 100%;
   z-index: 999;
   background-color: #fff;
@@ -30,6 +31,10 @@ img {
 
 .header-box {
   padding: 15px 0;
+}
+
+.fa-bolt {
+  font-size: 3em;
 }
 
 .button1-inner {
@@ -48,10 +53,16 @@ img {
 }
 
 .main-content-text {
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center;
   color: #74cfae;
 }
 
 .content-text-inner {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
   color: #c0c0c0;
 }
 
@@ -59,23 +70,70 @@ img {
   background-color: #74cfae;
 }
 
+.section1-box {
+  padding-top: 50px;
+}
+
 .section1-text-box {
+  margin-top: 20px;
+  text-align: center;
   color: #fff;
+}
+
+.section-text {
+  font-size: 24px;
+  text-align: center;
+}
+
+.section-text-inner {
+  font-size: 20px;
+  margin-top: 35px;
+  line-height: 25px;
 }
 
 .article {
   background-color: #f2f2f2;
 }
 
+.article-body {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
 .article-content-text {
+  text-align: center;
+  font-size: 24px;
   color: #333;
 }
 
+.article-conteiner1 {
+  margin-top: 40px;
+}
+
+.photobox  {
+  display: inline-block;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.photobox:hover {
+  opacity: 1;
+}
+
 .article-textbox-content.is-inner {
+  font-size: 20px;
+  font-family: 'raleway';
+  line-height: 1.4;
   color: #333;
 }
 
 .article-btn-inner {
+  width: 100px;
+  height: 15px;
+  font-size: 12px;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
   background-color: #74cfae;
   color: #fff;
 }
@@ -84,11 +142,21 @@ img {
   background-color: #4e4e4e;
 }
 
+.section2-content {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
 .section2-content-title {
+  font-size: 30px;
+  margin-bottom: 70px;
+  font-family: 'raleway';
   color: #fff;
 }
 
 .section2-content-inner {
+  line-height: 26px;
   color: #fff;
 }
 
@@ -97,6 +165,10 @@ img {
 }
 
 .nav-box {
+  padding: 25px 0;
+  width: 185px;
+  font-size: 50px;
+  transition: 0.3s;
   color: #74cfae;
 }
 
@@ -104,8 +176,14 @@ img {
   background-color: #74cfae;
 }
 
-.footer-inner {
+.footer-text {
+  padding-top: 20px;
+  padding-bottom: 25px;
   color: #fff;
+}
+
+.footer-inner {
+  text-align: right;
 }
 
 
@@ -113,31 +191,8 @@ img {
 @media screen and (min-width:1200px){
   /* header部分のスタイル */
 
-  .header {
-    position: fixed;
-    width: 100%;
-    margin: 0;
-  }
-
-  .header-box {
-    padding: 15px 0;
-  }
-
-  .fa-bolt {
-    font-size: 3em;
-  }
-
   .hum-menu {
     display: none;
-  }
-
-  .button1-inner {
-    float: right;
-    display: block;
-    font-size: 12px;
-    padding: 14px 12px;
-    cursor: pointer;
-    text-decoration: none;
   }
 
   .button1-inner:hover {
@@ -158,27 +213,11 @@ img {
     padding: 250px 0;
   }
 
-  .main-content-text {
-    font-size: 90px;
-    font-weight: 700;
-    text-align: center
-  }
-
-  .content-text-inner {
-    font-size: 30px;
-    margin-top: 20px;
-    text-align: center;
-  }
-
   /* section1のスタイル */
 
 
   .section1-box {
     display: flex;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding-top: 50px;
-    justify-content: center
   }
 
   .section1-box-content {
@@ -187,49 +226,22 @@ img {
 
   .section1-text-box {
     width: 650px;
-    text-align: center;
-    margin: 0 auto;
     margin-left: 140px;
-    margin-top: 20px;
-  }
-
-  .section-text {
-    font-size: 24px;
-    text-align: center
   }
 
   .section-text-inner {
     width: 650px;
-    font-size: 20px;
-    margin-top: 35px;
-    line-height: 25px;
-    box-sizing: border-box;
-    word-break: keep-all;
   }
 
   /* articleのスタイル */
-
-  .article-body {
-    width: 1100px;
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
 
   .article-textbox1 {
     text-align: center
   }
 
-  .article-content-text {
-    text-align: center;
-    font-size: 24px;
-  }
-
-
   .article-conteiner1 {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
-    justify-content: center;
   }
 
   .conteiner1-inner {
@@ -244,51 +256,20 @@ img {
     margin-top: 80px;
   }
 
-  .photobox {
-    opacity: 0.7;
-    transition: 0.3s;
-  }
-
-  .photobox:hover {
-    transition: 0.3s;
-    opacity: 1;
-  }
-
   .article-textbox2 {
     display: flex;
     margin-top: 90px;
     justify-content: center;
   }
 
-
-  .article-conteinerbox {
-    text-align: center;
-  }
-
-  .article-conteinerbox.is-text {
-    text-align: center;
-  }
-
   .article-textbox-content.is-inner {
-    display: inline-block;
     width: 610px;
     text-align: center;
     margin-right: 90px;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    word-break: keep-all;
-    font-size: 20px;
-    font-family: 'raleway';
   }
 
   .article-btn-inner {
-    font-size: 12px;
-    width: 100px;
-    height: 15px;
-    text-align: center;
-    padding: 14px 20px;
     cursor: pointer;
-    text-decoration: none;
   }
 
   .article-btn-inner:hover {
@@ -298,27 +279,8 @@ img {
 
   /* section2のスタイル */
 
-
-  .section2 {
-    width: 100%;
-  }
-
-  .section2-content {
-    width: 1100px;
-    padding-top: 70px;
-    padding-bottom: 100px;
-    text-align: center;
-  }
-
-  .section2-content-title {
-  font-size: 30px;
-  margin-bottom: 70px;
-  font-family: 'raleway';
-  }
-
   .section2-content-inner {
     display: inline-block;
-    line-height: 26px;
   }
 
   .section2-content-inner:nth-child(n+3){
@@ -331,24 +293,14 @@ img {
 
   /* navのスタイル */
 
-  .nav {
-    width: 100%;
-    text-align: center;
-  }
-
   .nav-content {
-    width: 1100px;
     padding: 160px 0;
-    text-align: -webkit-center;
+    text-align: center;
   }
 
   .nav-box {
     display: inline-block;
-    padding: 25px 0;
-    width: 185px;
-    font-size: 50px;
-    cursor: pointer;
-    transition: 0.3s;
+
   }
 
   .nav-box:hover {
@@ -360,17 +312,6 @@ img {
 
   .footer {
     width: 100%;
-  }
-
-  .footer-text {
-    width: 1100px;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 25px;
-  }
-
-  .footer-inner {
-    text-align: right;
   }
 }
 
@@ -388,29 +329,8 @@ img {
     display: block;
   }
 
-  .header {
-    position: fixed;
-    margin: 0;
-  }
-
-  .header-box {
-    padding: 15px 0;
-  }
-
-  .fa-bolt {
-    font-size: 3em;
-  }
-
   .hum-menu {
     display: none;
-  }
-
-  .button1-inner {
-    float: right;
-    display: block;
-    font-size: 12px;
-    padding: 14px 12px;
-    text-decoration: none;
   }
 
   .main {
@@ -422,80 +342,30 @@ img {
     padding: 250px 0;
   }
 
-  .main-content-text {
-    font-size: 90px;
-    font-weight: 700;
-    text-align: center
-  }
-
-  .content-text-inner {
-    font-size: 30px;
-    margin-top: 20px;
-    text-align: center;
-  }
-
   .section1-box {
-    display: block;
-    margin: 0 auto;
-    padding-top: 50px;
     padding-bottom: 25px;
-    justify-content: center
   }
 
   .section1-box-content {
-    margin-left: 0;
     text-align: center;
   }
 
   .section1-text-box {
-    width: 97%;
-    margin: 0 auto;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .section-text {
-    font-size: 24px;
-    text-align: center
+    margin: 20px auto 0;
   }
 
   .section-text-inner {
     width: 650px;
-    font-size: 20px;
-    margin: 0 auto;
-    margin-top: 35px;
-    line-height: 25px;
-  }
-
-  .article-body {
-    padding-top: 60px;
-    padding-bottom: 70px;
+    margin: 35px auto 0;
   }
 
   .article-textbox1 {
     text-align: center
   }
 
-  .article-content-text {
-    text-align: center;
-    font-size: 24px;
-  }
-
-
-  .article-conteiner1 {
-    display: block;
-    flex-wrap: nowrap;
-    margin-top: 40px;
-    justify-content: center;
-  }
-
   .conteiner1-inner {
     margin-left: 0;
     text-align: center;
-  }
-
-  .conteiner1-inner:nth-child(3n+1) {
-    margin-left: 0;
   }
 
   .conteiner1-inner:nth-child(n+4) {
@@ -506,15 +376,9 @@ img {
     margin-top: 0;
   }
 
-  .photobox {
-    display: inline-block;
-    opacity: 0.7;
-  }
 
   .article-textbox2 {
-    display: block;
     margin-top: 80px;
-    justify-content: center;
   }
 
 
@@ -522,53 +386,23 @@ img {
     text-align: center;
   }
 
-  .article-conteinerbox.is-text {
-    text-align: center;
-  }
-
   .article-textbox-content.is-inner {
     display: inline-block;
     width: 610px;
-    text-align: center;
-    margin-right: 0;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    word-break: keep-all;
-    font-size: 20px;
-    font-family: 'raleway';
   }
 
   .article-btn-inner {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
-    font-size: 12px;
-    width: 100px;
-    height: 15px;
-    text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
   }
 
-  .section2-content {
-    padding-top: 70px;
-    padding-bottom: 100px;
-    text-align: center;
-  }
-
   .section2-content-title {
-  font-size: 30px;
   margin-bottom: 50px;
-  font-family: 'raleway';
-  }
-
-  .section2-content-inner {
-    display: block;
-    line-height: 26px;
   }
 
   .section2-content-inner:nth-child(n+3){
-    margin-left: 0;
     margin-top: 88px;
   }
 
@@ -585,57 +419,18 @@ img {
     justify-content: center;
     padding: 160px 0;
   }
-
-  .nav-box {
-    display: table-cell;
-    padding: 25px 0;
-    width: 185px;
-    font-size: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .footer-text {
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 25px;
-  }
-
-  .footer-inner {
-    text-align: right;
-  }
 }
 
 
 /* SP */
 @media screen and (max-width:767px){
 
-  #contactbtn {
-    display: none;
-  }
-
   .inner {
     width: 97%;
   }
 
-  .header {
-    margin: 0;
-  }
-
-  .header-box {
-    padding: 15px 0;
-  }
-
-  .fa-bolt {
-    font-size: 3em;
-  }
-
   .button1-inner {
-    float: right;
-    display: block;
-    font-size: 12px;
-    padding: 14px 12px;
-    text-decoration: none;
+    display: none;
   }
 
   .picture {
@@ -663,88 +458,34 @@ img {
     padding-bottom: 130px;
   }
 
-  .main-content-text {
-    font-size: 90px;
-    font-weight: 700;
-    text-align: center
-  }
-
   .content-text-inner {
-    font-size: 30px;
-    margin-top: 20px;
-    text-align: center;
-    font-family: none;
+    width: 300px;
+    margin: 20px auto 0;
   }
 
   /* section1のスタイル */
 
   .section1-box {
-    display: block;
-    margin: 0 auto;
-    padding-top: 50px;
     padding-bottom: 25px;
-    justify-content: center
   }
 
   .section1-box-content {
-    margin-left: 0;
     text-align: center;
   }
 
   .section1-text-box {
-    width: 97%;
-    margin-left: 0;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .section-text {
-    margin-top: 20px;
-    font-size: 24px;
-    text-align: center
-  }
-
-  .section-text-inner {
-    width: 97%;
-    margin: 0 auto;
-    margin-top: 35px;
-    font-size: 20px;
-    line-height: 25px;
-    box-sizing: border-box;
-    word-break: keep-all;
+    margin: 20px auto 0;
   }
 
   /* articleのスタイル */
-
-  .article-body {
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
 
   .article-textbox1 {
     text-align: center
   }
 
-  .article-content-text {
-    text-align: center;
-    font-size: 24px;
-  }
-
-
-  .article-conteiner1 {
-    display: block;
-    text-align: center;
-    margin-top: 40px;
-    justify-content: center;
-  }
-
   .conteiner1-inner {
     margin-left: 0;
     text-align: center;
-  }
-
-  .conteiner1-inner:nth-child(3n+1) {
-    margin-left: 0;
   }
 
   .conteiner1-inner:nth-child(n+4) {
@@ -755,15 +496,8 @@ img {
     margin-top: 0;
   }
 
-  .photobox {
-    opacity: 0.7;
-  }
-
-
   .article-textbox2 {
-    display: block;
     margin-top: 90px;
-    justify-content: center;
   }
 
 
@@ -771,58 +505,15 @@ img {
     text-align: center;
   }
 
-  .article-conteinerbox.is-text {
-    text-align: center;
-  }
-
-  .article-textbox-content.is-inner {
-    width: 97%;
-    display: inline-block;
-    text-align: center;
-    line-height: 1.4;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    word-break: keep-all;
-    font-size: 20px;
-    font-family: 'raleway';
-  }
-
   .article-btn-inner {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
-    font-size: 12px;
-    width: 100px;
-    height: 15px;
-    text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
   }
 
 
   /* section2のスタイル */
-
-
-  .section2 {
-    width: 100%;
-  }
-
-  .section2-content {
-    padding-top: 70px;
-    padding-bottom: 100px;
-    text-align: center;
-  }
-
-  .section2-content-title {
-  font-size: 30px;
-  margin-bottom: 70px;
-  font-family: 'raleway';
-  }
-
-  .section2-content-inner {
-    display: block;
-    line-height: 26px;
-  }
 
   .section2-content-inner:nth-child(n+3){
     margin-left: 0;
@@ -845,22 +536,6 @@ img {
 
   .nav-box {
     display: inline-block;
-    padding: 25px 0;
     width: 97%;
-    text-align: center;
-    font-size: 50px;
-    transition: 0.3s;
-  }
-
-  /* footerのスタイル */
-
-  .footer-text {
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 25px;
-  }
-
-  .footer-inner {
-    text-align: right;
   }
 }
